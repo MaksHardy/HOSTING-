@@ -1,0 +1,13 @@
+body {
+  width: 1169px;
+  margin: 0 auto;
+}
+.logo div {
+  display: inline-block;
+}
+.reg a {
+display: inline-block;
+}
+.reg ul li {
+  display: inline-block;
+}
