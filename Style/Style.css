@@ -1,13 +1,19 @@
 body {
-  width: 1169px;
-  margin: 0 auto;
+    width: 1169px;
+    margin: 0 auto;
 }
-.logo div {
+
+h1 {
   display: inline-block;
 }
-.reg a {
-display: inline-block;
-}
-.reg ul li {
+
+.reg li {
   display: inline-block;
+}
+
+.menu li {
+  display: inline-block;
+}
+.container {
+    display: inline-block;
 }
