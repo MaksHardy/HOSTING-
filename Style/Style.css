@@ -1,19 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+* {
+    transition: all .1s ease-in;
+}
+
 body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
     width: 1169px;
+}
+
+
+/*---------------------HEADER-----------------------*/
+
+.header-container div {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0 auto;
 }
 
+header {
+    margin: 0 auto;
+}
+
+.top {
+    width: 100%;
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: right;
+}
+
 h1 {
-  display: inline-block;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.logo div {
+    width: 20%;
+    height: 100%;
+    line-height: 100px;
+    display: inline-block;
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+.reg ul li a {
+    text-decoration: none;
+    color: grey;
+    display: block;
+    height: 46px;
+    position: relative;
+    vertical-align: center;
+}
+
+.strongtext {
+    color: #484E57;
+}
+
+.reg div {
+    display: inline-block;
+    width: 80%;
+}
+
+.reg ul {
+    display: inline-block;
+    font-size: 0;
+    padding: 0;
+    height: 46px;
 }
 
 .reg li {
-  display: inline-block;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .menu li {
-  display: inline-block;
-}
-.container {
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font: white;
+    line-height: 55px;
+    width: 10%;
+    height: 55px;
+    padding: 0;
+    text-align: center;
     display: inline-block;
+    background-color: #ff8261;
+}
+
+.menu ul {
+    height: 55px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.menu ul li a {
+    color: #FFF;
+}
+
+.menu div {
+    height: 55px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    vertical-align: middle;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #52CBF8;
+}
+
+
+/*---------------------MAIN-----------------------*/
+
+main {
+    margin: 0 auto;
+}
+
+
+/*---------------------slider-----------------------*/
+
+.slider {
+    width: 1169px;
+    height: 570px;
+    display: inline-block;
+    background-color: #222836;
+    text-align: center;
+    color: #FFF;
+    line-height: 100%;
+}
+
+.slider h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+/*---------------------search-----------------------*/
+
+.search {
+    margin: 0 auto;
+    width: 1169px;
+    height: 200px;
+    background-color: #E7F4F8;
+    display: inline-block;
+}
+
+.search .fa {
+    display: inline-block;
+    color: #fb6b45;
+    font-size: 27px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.serch-text {
+    display: inline-block;
+}
+
+.search-form {
+    width: 60%;
+    display: inline-block;
+}
+
+.search-text h3 {
+    height: 44px;
+    text-transform: uppercase;
+    color: #859aa1;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: left;
+    margin: 0;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.text-bold-h3 {
+    color: #556b72;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 31px;
+    text-align: left;
+}
+
+
+/*---------------------benefits-----------------------*/
+
+.our_benefits {
+    width: 33%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.our_benefits .text {
+    display: inline-block;
+    width: 70%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.our_benefits .text h3 {
+    color: #556b72;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 31px;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.benefits-text h3 {
+    text-transform: uppercase;
+    color: #859aa1;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: left;
+}
+
+.our_benefits .text p {
+    color: #a0a9b6;
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.our_benefits .fa {
+    vertical-align: top;
+    display: inline-block;
+    width: 25%;
+    color: #FF8261;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
