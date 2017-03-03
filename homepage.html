@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Hosting</title>
-    <link rel="stylesheet" type="text/css" href="Style/normalize.css">
+    <link rel="stylesheet" type="text/css" href="Style/reset.css">
     <link rel="stylesheet" type="text/css" href="Style/newstyle.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
@@ -21,7 +21,7 @@
                 <div class="reg">
                     <div class="reg-inner">
                         <hr>
-                        <ul class="reg-text">
+                        <ul class="reg-text"><span class="glyphicon glyphicon-icon" aria-hidden="true"></span>
                             <li class="bord"><a href="mailto:info@webhosting.com"><span class="strongtext">Support</span> : info@webhosting.com</a></li>
                             <li class="bord"><a href="#">Register</a></li>
                             <li><a href="#">Login</a></li>
@@ -40,7 +40,7 @@
                         <li><a href="#" title="Testimonials">Testimonials</a></li>
                         <li><a href="#" title="Blog">Blog</a></li>
                         <li><a href="#" title="Support">Support</a></li>
-                        <li><a href="file:///Users/Maks_Hardy/Desktop/Huge%20Search/HOSTING-/form.html" title="Contact Us">Contact Us</a></li>
+                        <li><a href="form.html" title="Contact Us">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -64,14 +64,19 @@
                     <h3>Search your <br> <splan class="text-bold-h3">Domain</splan> </h3>
                 </div>
                 <form class="search_form" action="file.html" method="POST" target="_blank">
-                    <input type="search_input" name="Last Name" placeholder="Enter your domain name" required>
+                    <input class="search-input" type="search_input" name="search" placeholder="Enter your domain name" required>
                     <select class="search1">
                         <option>Year (0-1 year)</option>
+                        <option>Year (1-3 year)</option>
+                        <option>Year (3-5 year)</option>
+                        <option>Year (>5 year)</option>
                     </select>
-                    <select class="search2">
+                    <select class="search1">
+                        <option>.com</option>
+                        <option>.com</option>
                         <option>.com</option>
                     </select>
-                    <input type="submit" value="search">
+                    <input type="submit" value="search" id="serch-but">
                 </form>
             </div>
         </section>
@@ -123,8 +128,8 @@
                         <h3>100% security</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
                     </div>
+                </article>
             </div>
-            </article>
         </section>
         <!-- features -->
         <div class="features">
@@ -162,8 +167,9 @@
         <div class="our-hosting">
             <div class="our-hosting-bg">
                 <div class="hosting-main">
-                    <div class="padd"><div class="line"></div>
-                    <h3 class="name">Our <br><span class="text-bold-h3">Hosting</span></h3></div>
+                    <div class="padd">
+                        <div class="line"></div>
+                        <h3 class="name">Our <br><span class="text-bold-h3">Hosting</span></h3></div>
                 </div>
                 <div class="table">
                     <div class="four-tab">
@@ -242,7 +248,71 @@
                     </div>
                 </div>
             </div>
+            <!-- NEWSLETTER -->
+            <section class="newsletter">
+                <div class="newsletter-bg">
+                    <div class="letter">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="letter-name">
+                        <h3 class="name">
+                            sign up your <br><span class="text-bold-h3">newsletter</span> 
+                        </h3>
+                    </div>
+                    <form class="domain" action="file.html" method="POST" target="_blank">
+                        <input class="domain-input" type="url" name="url" placeholder="Enter your domain name" required>
+                        <input class="domain-but" type="submit" value="Sign up now">
+                    </form>
+                </div>
+            </section>
         </div>
+        <section class="footer">
+            <div class="footer-bg">
+                <div class="f-logo">
+                    <img class="logo-img" src="images/img/logo.png" alt="logo"></img>
+                    <h1>Hosting</h1>
+                    <h3 class="trmark">2015 © Allright Reserved</h3>
+                </div>
+                <div class="lists">
+                    <div class="Quick-links">
+                        <h4 class="ql">Quick links</h4>
+                        <ul class="qllist">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Us</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Hostingplans</a> </li>
+                            <li><a href="#">Domains</a></li>
+                        </ul>
+                        <ul class="qllist" id="links-list">
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="form.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="cont-us">
+                    <h4 class="c-us">Contact us</h4>
+                    <ul class="con-us">
+                        <li><span class="con-us-wh">Address : </span>9867 lipsum text here</li>
+                        <li>There are many variations</li>
+                        <li><span class="con-us-wh">Email : </span> <a href="mailto:info@webhosting.com">info@hosting.com</a></li>
+                        <li><span class="con-us-wh">Call :</span> +87 7765 557 888</li>
+                    </ul>
+                    </div>
+                    <div class="soc-media">
+                        <h4 class="soc-med">Social media</h4>
+                        <ul class="social-media">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
     </main>
 </body>
 <script src="https://use.fontawesome.com/47c54b3ca0.js"></script>
